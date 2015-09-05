@@ -8,7 +8,20 @@
   <groupId>netgloo</groupId>
   <artifactId>spring-boot-basewebapp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<distributionManagement> 
+			<repository>
+				<id>local-repo</id>
+				<name>local-repo</name>
+				<url>http://localhost:8081/nexus/content/repositories/local-repo/</url>
+				<releases>
+					<enabled>true</enabled>
+				</releases>
 
+				<snapshots>
+					<enabled>true</enabled>
+				</snapshots>
+			</repository>
+</distributionManagement>
   <name>spring-boot-basewebapp</name>
   <description>Spring Boot base web application</description>
 
